@@ -1,13 +1,33 @@
-# Bug and Issue Report
-Reported By: Akhil | Date: 31-Oct-2026 | Environment: Chrome 124 Win11
+# Bug and Issue Report - REAL EVIDENCE 31 Oct 2026
 
-CB-101 - Contact Form Validation UX - Low (UX Improvement) - Real manual test by Akhil on HP laptop 31-Oct-2026: cynbit.in/contact shows only browser native tooltip "Please fill in this field", no custom inline error "Full Name is required", functional validation OK but custom styling needed - Evidence: 06_manual_contact_test_akhil_real.png & 01_contact_form_validation_browser_default.png
-CB-1024 - Services overflow on 360px mobile - Medium - Horizontal scroll broken - Evidence 02...
-QA-2847 - Performance score 62 Low - Medium - LCP 4.8s Images 1.9MB - Evidence 03...
-CYNBIT-112 - Footer LinkedIn Instagram dead links href="#" - Low - Evidence 04...
-CYB-1024 - favicon.ico 404 Not Found - Low - Evidence 05...
-CB-103 - No loading state on submit - Low
-CB-104 - Missing alt text on hero images - Medium
-CB-105 - Inconsistent button hover states - Low
+Reported By: Akhil Kumar | Date: 31-Oct-2026 | Environment: Chrome 124 Win11 HP Laptop | Real Manual Testing
 
-Total 8 bugs - High 1 Medium 3 Low 4 - All documented with severity and evidence
+## HIGH PRIORITY BUGS - VALIDATED WITH SCREENSHOTS
+
+### CB-102: Full Name Accepts Numbers 12345 [HIGH] - CONFIRMED BUG
+
+- **File:** Before_BUG02_before_fullname_12345.png (Input) + BUG02_after_inquiry_received_31oct.png (Proof)
+- **Steps:**
+    1. Go to cynbit.in/contact on HP Laptop
+    2. Full Name = 12345
+    3. Email = akhil@gmail.com  
+    4. Company = 123456789
+    5. Message = test
+    6. Click SEND INQUIRY
+    7. Result: INQUIRY RECEIVED - BUG CONFIRMED!
+- **Expected:** Should reject numbers, show "Please enter valid name"
+- **Actual:** Accepts 12345 as valid name - HIGH BUG - REAL LAPTOP EVIDENCE 31 Oct
+
+### CB-101: Contact Form Validation Missing - Email
+
+- **File:** BUG01_email_validation_missing_real_31oct_1536.png
+- **Status:** CONFIRMED - Email validation missing
+
+### Other Issues:
+- CB-1024 - Services overflow on 360px mobile - Medium
+- QA-2847 - Performance score 62 Low - Medium
+- CYNBIT-112 - Footer LinkedIn Instagram dead links
+- CYB-1024 - favicon.ico 404 Not Found - Low
+- CB-103 - No loading state on submit - Low
+- CB-104 - Missing alt text on hero images - Medium
+- CB-105 - Inconsistent button hover states - Low
