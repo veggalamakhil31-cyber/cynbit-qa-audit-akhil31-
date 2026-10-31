@@ -4,12 +4,12 @@ Tester: Akhil | Date: 31-Oct-2026 | Environment: Chrome 124, Win11
 Test Scope: cynbit.in Website
 Modules: Homepage, Services, Contact Form, Footer, Performance
 
-TC-001: Contact Form Validation - FAIL
-Steps: Open Contact > Leave empty > Click Submit
-Expected: Validation error "Please fill required fields"
-Actual: Form submits with empty data, no error
-Bug ID: CB-101 | Severity: High
-Evidence: 01_contact_form_empty_validation_bug.png
+TC-001: Contact Form Validation UX - PARTIAL PASS (Real Test by Akhil)
+Steps: Open cynbit.in/contact > Leave Full Name empty > Click SEND INQUIRY
+Expected: Custom styled inline error "Full Name is required" with red border
+Actual: Only browser native tooltip "Please fill in this field" shows, no custom UI, no inline message, UX needs improvement. Functional validation present but needs custom styling. Real evidence captured on HP laptop 31-10-2026 by Akhil
+Bug ID: CB-101 | Severity: Low (UX Improvement) | Status: Functional OK, UX Needs Improvement
+Evidence: 06_manual_contact_test_akhil_real.png (Real laptop photo) & 01_contact_form_validation_browser_default.png
 
 TC-002: Mobile Responsive - Services Section - FAIL
 Steps: DevTools 360x800 > Check Services
